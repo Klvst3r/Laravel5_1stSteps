@@ -243,3 +243,77 @@ https://styde.net/politica-de-privacidad/
 https://www.hostinger.es/tutoriales/como-instalar-composer
 
 
+Una vez instalado composer ahora vamos a instalar Laravel
+
+Para ello nos dirigimos a la carpeta de nuestros poroyectos web:
+
+creando una carpeta 
+
+Ej.
+Laravel
+
+Y empezamos a crear el proyecto de Laravel
+
+Mediante composer:
+
+composer create-projet
+
+Indicando que paquete o que repositorio vamos a instalar en este caso
+
+composer create-project laravel/laravel
+
+Que es el repositorio donde esta el repositorio del framework dandole un nombre donde se va a hacer la instalacion de Laravel y nuestro poryecto se llamara simplemente Laravel
+
+composer create-project laravel/laravel Laravel --prefer-dist
+
+--prefer-dist
+
+Esto descargara todos los paquetes y dependencias
+
+Una vez terminando la instalacion podremos porbar el poryecto en la web en el navegador
+
+Al termono de la instacion porbamos si ha marchado todo bien:
+
+En el navegador web ubicando la carpeta public:
+
+Ej.
+http://localhost/Udemy/Laravel5_1stSteps/Laravel/public/
+
+
+
+Como instalar una versión concreta
+
+Todas las versiones de Laravel 5 son iguales, se programa exactamente igual en todas, pero quizas puedan existir algunos micro cambios muy muy pequeños de una versión a otra, para instalar una versión especifica de Laravel debes lanzar el comando:
+
+composer create-project laravel/laravel proyecto "5.2.*" 
+
+Donde proyecto, es el nombre de tu proyecto.
+
+Y donde 5.2, es la versión que eliges.
+
+En el curso yo utilizo esta versión porque es una de las mas estables y que mejor funciona, y ya te digo la manera de programar es igual en esta que en la 5.3, 5.4 y 5.5.
+
+Nos vemos en la siguiente clase :)
+
+La salida final puede ser algo como lo que se muestra a continuacion
+
+----------- code ---------
+
+Generating autoload files
+Carbon 1 is deprecated, see how to migrate to Carbon 2.
+https://carbon.nesbot.com/docs/#api-carbon-2
+    You can run ".\vendor\bin\upgrade-carbon" to get help in updating carbon and other frameworks and libraries that depend on it.
+10 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> Illuminate\Foundation\ComposerScripts::postUpdate
+> php artisan optimize
+Generating optimized class loader
+> php artisan key:generate
+Application key [base64:bU/VEGb+wnUCFBaS+0YKqgAqe8uokzqgAtGVx8hpMeg=] set successfully.
+
+--------------------------------
+
+La salida en el navegador sera algo como:
+
+Laravel 5
+
